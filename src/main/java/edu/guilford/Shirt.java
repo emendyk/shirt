@@ -35,7 +35,11 @@ public class Shirt {
         brand = newBrand;
     }
 
-
+    // toString
+    public String toString() {
+        return "Shirt [color=" + color + ", size=" + size + ", material=" + material + ", brand=" + brand + "]";
+    }
+    
 
 
 
