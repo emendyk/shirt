@@ -67,7 +67,28 @@ public class clothes {
         System.out.print(s.material);
         System.out.print(s.brand);
 
+        
+        
         Random rand = new Random();
+        // ask the user to generate a new shirt
+        System.out.println("Would you like to generate a new shirt? (y/n)");
+        // if yes, generate a new shirt
+        if (rand.nextInt(2) == 1) {
+            System.out.println("Generating a new shirt...");
+            Shirt s2 = new Shirt("Blue", 'M', "Cotton", "Nike");
+            System.out.println(s2);
+        }
+        // if no, exit the program
+        else {
+            System.out.println("Exiting the program...");
+            System.exit(0);
+        }
+        
+
+        
+
+    
+
 
     }
 
